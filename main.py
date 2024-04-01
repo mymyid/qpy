@@ -1,9 +1,9 @@
 import numpy as np
 
-# Hypothetical environment settings
-n_states = 10  # Number of states
-n_actions = 3  # Number of actions
-
+# In[]: Hypothetical environment settings
+n_states = 9  # Number of states
+n_actions = 4  # Number of actions
+# In[]:
 # Initialize Q-table with zeros
 Q = np.zeros((n_states, n_actions))
 
@@ -12,7 +12,7 @@ alpha = 0.1  # Learning rate
 gamma = 0.99  # Discount factor
 epsilon = 0.1  # Exploration rate
 n_episodes = 1000  # Number of episodes
-
+# In[]:
 # Placeholder function for choosing an action using epsilon-greedy strategy
 def choose_action(state, Q, epsilon):
     if np.random.uniform(0, 1) < epsilon:
@@ -30,7 +30,7 @@ def step(state, action):
     new_state = (state + 1) % n_states  # Example new state
     reward = 1  # Example reward
     return new_state, reward
-
+# In[]:
 # Q-learning algorithm
 for episode in range(n_episodes):
     state = np.random.randint(0, n_states)  # Start at a random state
