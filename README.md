@@ -1,5 +1,4 @@
 # qpy
-q learning in python
 
 Q-learning is a value-based reinforcement learning algorithm that learns the quality of actions, denoting the total expected rewards an agent can obtain, starting from a state and taking an action. Here's a simplified overview of how to implement Q-learning:
 
@@ -22,7 +21,3 @@ Q-learning is a value-based reinforcement learning algorithm that learns the qua
    - `max(Q(s', a'))` is the estimated optimal future value, achieved by taking the best action `a'` in the new state `s'`.
 
 5. **Repeat steps 2-4 for each episode**: Continue this loop for a fixed number of episodes or until the agent's performance is satisfactory.
-
-Now, let's code a simple Q-learning example. Suppose we have a simple environment with discrete states and actions. We'll use a placeholder environment to illustrate the process, but you can replace it with any specific environment, like those from the OpenAI Gym library.
-
-Would you like a more detailed code example or guidance on implementing a specific part of the Q-learning process?
