@@ -1,11 +1,10 @@
 # qpy
-q learning in python
 
 Q-learning is a value-based reinforcement learning algorithm that learns the quality of actions, denoting the total expected rewards an agent can obtain, starting from a state and taking an action. Here's a simplified overview of how to implement Q-learning:
 
-1. **Initialize the Q-table**: This is a matrix where we have a row for every state and a column for every action. The value at Q(s, a) represents the current estimate of the total reward you can get, starting from state `s` and taking action `a`. Initialization is typically done with zeros.
-
-2. **Choose an action**: From the current state, select an action. This can be done randomly (exploration) or by taking the best-known action (exploitation), according to the Q-table. A common strategy is the ε-greedy method, where with probability ε, a random action is chosen (exploration), and with probability 1-ε, the action with the highest value in the Q-table is chosen (exploitation).
+1. **Initialize the Q-table**: This is a matrix with a row for every state and a column for every action. The value at Q(s, a) represents the current estimate of the total reward you can get, starting from state `s` and taking action `a`. Initialization is typically done with zeros.
+   ![image](https://github.com/mymyid/qpy/assets/11188109/5d5396fd-a2f2-4e46-a5dd-f618433262c4)  
+2. **Choose an action**: From the current state, select an action. According to the Q-table, this can be done randomly (exploration) or by taking the best-known action (exploitation). A common strategy is the ε-greedy method, where with probability ε, a random action is chosen (exploration). With probability 1-ε, the action with the highest value in the Q-table is chosen (exploitation).
 
 3. **Perform the action and observe the reward**: Once an action is taken, the agent receives a reward and transitions to a new state.
 
@@ -21,8 +20,6 @@ Q-learning is a value-based reinforcement learning algorithm that learns the qua
    - `γ` is the discount factor, representing the importance of future rewards,
    - `max(Q(s', a'))` is the estimated optimal future value, achieved by taking the best action `a'` in the new state `s'`.
 
-5. **Repeat steps 2-4 for each episode**: Continue this loop for a fixed number of episodes or until the agent's performance is satisfactory.
+5. **Repeat steps 2-4 for each episode**: Continue this loop for a fixed number of episodes or until the agent performs satisfactorily.
 
-Now, let's code a simple Q-learning example. Suppose we have a simple environment with discrete states and actions. We'll use a placeholder environment to illustrate the process, but you can replace it with any specific environment, like those from the OpenAI Gym library.
-
-Would you like a more detailed code example or guidance on implementing a specific part of the Q-learning process?
+![image](https://github.com/mymyid/qpy/assets/11188109/fd8648a9-6a10-4a24-bbc5-b8d22214e920)
