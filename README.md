@@ -21,3 +21,5 @@ Q-learning is a value-based reinforcement learning algorithm that learns the qua
    - `max(Q(s', a'))` is the estimated optimal future value, achieved by taking the best action `a'` in the new state `s'`.
 
 5. **Repeat steps 2-4 for each episode**: Continue this loop for a fixed number of episodes or until the agent performs satisfactorily.
+
+![image](https://github.com/mymyid/qpy/assets/11188109/fd8648a9-6a10-4a24-bbc5-b8d22214e920)
